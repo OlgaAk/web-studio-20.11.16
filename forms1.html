@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html lang=ru>
+   <head> 
+      <meta charset="utf-8">
+      <title>Анкета | Разработка создание сайта</title>
+	<link rel="stylesheet" type="text/css" href="forms1.css">
+	  
+   </head>
+ 
+ <body>  
+  	  
+	  <div class="wrapper-holder">
+	  
+		<h1>Бриф: разработка вашего веб-сайта</h1>
+		<h4>Для начала работы над Вашим проектом необходимо заполнить анкету:</h4>
+                
+ 		 <div class="brief">
+		 
+		 <form  method="post" onsubmit="page.open('thanks.html');return false">
+		 
+		   <div class="sir-madam">
+			   <legend><b>Обращение</b></legend>
+                <label><input name="sex" type="radio" autofocus>Господин</label>
+                <label><input name="sex" type="radio">Госпожа</label>                    
+           </div>
+           
+           <div class="name-surname">
+               <label for="NameField"><b>Имя*</b></label>
+               <input id="NameField" type="text" placeholder="Иван" required maxlength="10">
+
+               <label for="SurnameField"><b>Фамилия*</b></label>
+               <input id="SurnameField" type="text" placeholder="Иванов" required maxlength="15">
+          </div>
+		
+		  <div class="birthday">
+                 <legend><b>Дата рождения</b></legend>				
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+				<option value="31">31</option>
+              </select>
+			 
+			<select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+				<option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+				  <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+			
+			<input id="YearField" type="text" placeholder="1970" required maxlength="4">
+
+            </div>
+		
+		    
+          <div class="company">
+                <label for="CompanyField"><b>Название компании*</b></label>
+               <input id="CompanyField" type="text" placeholder="ООО" required maxlength="20">
+
+          </div>
+		
+		  <div class="company-field">
+		         <legend><b>Сфера деятельности компании</b></legend>
+
+                <label class="checkbox-label"><input name="message[]" type="checkbox">Услуги</label>
+                <label class="checkbox-label"><input name="message[]" type="checkbox">Производство</label>
+                <label class="checkbox-label"><input name="message[]" type="checkbox">Наука</label>
+				<label class="checkbox-label"><input name="message[]" type="checkbox">Некоммерческая</label>
+                <label class="checkbox-label"><input name="message[]" type="checkbox">Другое</label>
+
+          </div>
+		   
+          <div class="contact">
+             
+              <label for="emailField"><b>Электронная почта*</b></label>
+              <input id="emailField" type="email" placeholder="info@mail.com">
+
+             <label for="phoneField"><b>Телефон*</b></label>
+            <input id="phoneField" type="tel"  placeholder="89112223344" required>
+			
+	     </div>
+          
+		  <div class="service">
+         <legend><b>Выберете интересующую вас услугу</b></legend>
+
+            <select>
+                <option value="1">Создание сайта-визитки</option>
+                <option value="2">Создание корпоративного сайта</option>
+                <option value="3">Создание интернет-магазина</option>
+                <option value="4">Оптимизация существующего сайта</option>
+                <option value="5">Продвижение существующего сайта</option>
+            </select>
+          </div>
+		  
+             <div class="project-description">
+                <label for="textareaField"><b>Описание проекта, задачи*</b></label>
+                <textarea id="textareaField" maxlength="200" rows="7" cols="55" required></textarea>
+            </div>  
+			
+			<div class="website-pages">
+
+ 			   <legend><b>Какие разделы будут у вашего сайта*</b></legend>
+			
+			    <label class="checkbox-label"><input name="message[]" type="checkbox">Профиль компании</label>
+                <label class="checkbox-label"><input name="message[]" type="checkbox">История</label>
+                <label class="checkbox-label"><input name="message[]" type="checkbox">Новости</label>
+				<label class="checkbox-label"><input name="message[]" type="checkbox">Контактная информация</label>
+                <label class="checkbox-label"><input name="message[]" type="checkbox">Карта</label>
+				<label class="checkbox-label"><input name="message[]" type="checkbox">Форма обратной связи</label>
+				<label class="checkbox-label"><input name="message[]" type="checkbox">FAQ</label>
+                <label class="checkbox-label"><input name="message[]" type="checkbox">Каталог продукции, возможность заказа</label>
+				<label class="checkbox-label"><input name="message[]" type="checkbox">Внутренняя зона для клиентов/партнёров/сотрудников</label>
+			</div> 
+			 
+			<div class="website-examples">
+                <label for="textareaField"><b>Примеры сайтов, которые вам нравятся*</b></label>
+                <textarea id="textareaField" maxlength="200" rows="7" cols="55" required></textarea>
+            </div>  
+			
+			
+			<div class="website-audience">
+                <label for="textareaField"><b>Ваша аудитория*</b></label>
+                <textarea id="textareaField" maxlength="200" rows="7" cols="55" required></textarea>
+            </div>  
+			
+			 <div class="deadline">
+         <legend><b>Требуемые сроки</b></legend>
+
+            <select>
+                <option value="1">1 день</option>
+                <option value="2">2 дня</option>
+                <option value="3" selected>3 дня</option>
+                <option value="4">Неделя</option>
+                <option value="5">Месяц</option>
+				<option value="5">Не срочно</option>
+            </select>
+          </div>
+			   
+			 <div class="how-found-us">
+                <legend><b>Как вы о нас узнали?</b></legend>
+
+                <select size="4">
+                <option value="1">Поисковик</option>
+                <option value="2">Наружняя реклама</option>
+                <option value="3">Знакомые</option>
+                <option value="4">Другое</option>
+                </select>
+		   
+            </div>
+		             
+            <div class="add-file">
+                <label for="fileField">Добавить готовые материалы (тексты, фото)</label>
+                <input id="fileField" type="file">
+            </div>
+			
+			 <div class="buttons">
+			 
+			      <input type="submit" value="Отправить">
+			 </div>
+			 
+				 </form>
+			</div>   
+		 </div>			   
+	  </div>
+           
+ </body>
+
+</html>
